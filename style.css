@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #1e293b;
+}
+
+/* ШАПКА И КОДОВЫЙ ЛОГОТИП */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-text {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.gov-blue {
+    color: #0052cc;
+}
+
+.gov-cam {
+    color: #0052cc;
+    font-size: 18px;
+    margin: 0 1px;
+}
+
+.logo-sub {
+    font-size: 7px;
+    letter-spacing: 1px;
+    color: #0052cc;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.header-phone {
+    background: #0052cc;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* ГЛАВНЫЙ БАННЕР */
+.hero {
+    padding: 15px;
+}
+
+.hero-badge {
+    background: #0a192f;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: right;
+    border-right: 5px solid #0052cc;
+}
+
+.hero-badge h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.hero-badge h2 span {
+    color: #0052cc;
+    font-weight: 800;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, #0052cc 0%, #002b80 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hero-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.hero-banner p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* УСЛУГИ */
+.services {
+    padding: 20px 15px;
+}
+
+.services h2 {
+    color: #0052cc;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+
+.icon-box {
+    width: 42px;
+    height: 42px;
+    background: #0052cc;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.text-box h3 {
+    font-size: 13px;
+    color: #0a192f;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.text-box p {
+    font-size: 11px;
+    color: #64748b;
+    line-height: 1.3;
+}
+
+/* БЛОК NİYƏ BİZ */
+.why-us {
+    background: #0052cc;
+    color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 16px 16px 0 0;
+    margin-top: 10px;
+}
+
+.why-us h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.why-us ul {
+    list-style: none;
+}
+
+.why-us li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.why-us li i {
+    color: #60a5fa;
+}
+
+/* ПОДВАЛ И КОНТАКТЫ */
+.footer {
+    background: #0a192f;
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.phone-icon-bg {
+    width: 50px;
+    height: 50px;
+    background: #0052cc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.contact-details h3 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.contact-details p {
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+.main-phone {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 2px;
+}
+
+.footer-features {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+
+.feat-item i {
+    font-size: 22px;
+    color: #0052cc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feat-item span {
+    font-size: 9px;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #475569;
+          /* СТИЛИ ДЛЯ СОЦСЕТЕЙ */
+  .social-links {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .social-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .social-btn i {
+            font-size: 18px;
+        }
+
+        .social-btn.instagram i {
+            color: #e1306c; /* Фирменный цвет Instagram */
+        }
+
+        .social-btn.tiktok i {
+            color: #00f2fe; /* Неоновый цвет TikTok */
+        }
+
+        .social-btn:active {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+}
