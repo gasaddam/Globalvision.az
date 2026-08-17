@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<lang="az">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobalVision — İT Həlləri və Təhlükəsizlik Sistemləri</title>
-    <!-- Иконки FontAwesome -->
+    <title>GlobalVision – İT Həlləri və Təhlükəsizlik Sistemləri</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-
-    <!-- ШАПКА -->
+    <!-- ШАПКА (Добавлен недостающий тег header) -->
     <header class="header">
         <div class="logo-text">
             <span class="gov-blue">G</span><i class="fas fa-camera gov-cam"></i><span class="gov-blue">V</span>
             <div class="logo-sub">GLOBALVISION IT</div>
         </div>
-        <a href="https://wa.me/994503336088?text=Salam!%20Saytdan%20yazıram,%20xidmətlərinizlə%20maraqlanıram." target="_blank" class="header-phone"><i class="fab fa-whatsapp"></i> 050 333 60 88</a>
+        <a href="https://wa.me/994503336088?text=Salam!%20Saytdan%20yazıram,%20xidmətlərinizlə%20maraqlanıram." target="_blank" class="header-phone">
+            <i class="fab fa-whatsapp"></i> 050 333 60 88
+        </a>
     </header>
+      
+    <!-- СЛАЙДЕР С БАННЕРАМИ -->
+    <section class="promo-slider-section">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <!-- Слайд 1 (Используем надёжные заглушки) -->
+          <div class="swiper-slide">
+            <a href="https://wa.me/994503336088" target="_blank">
+              <img src="https://placehold.co/800x400/0055ff/ffffff?text=GlobalVision+Banner+1" alt="Акция 1">
+            </a>
+          </div>
+
+          <!-- Слайд 2 -->
+          <div class="swiper-slide">
+            <a href="https://wa.me/994503336088" target="_blank">
+              <img src="https://placehold.co/800x400/0033aa/ffffff?text=GlobalVision+Banner+2" alt="Акция 2">
+            </a>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
 
     <!-- ГЛАВНЫЙ ЭКРАН -->
     <section class="hero">
@@ -97,18 +128,17 @@
         </ul>
     </section>
 
-        <!-- ПОДВАЛ / КОНТАКТЫ -->
+    <!-- ПОДВАЛ / КОНТАКТЫ -->
     <footer class="footer">
-        <class="contact-card">
+        <div class="contact-card">
             <div class="phone-icon-bg"><i class="fab fa-whatsapp"></i></div>
             <div class="contact-details">
                 <h3>ƏLAQƏ</h3>
                 <p>BİZİMLƏ ƏLAQƏ SAXLAYIN!</p>
                 <a href="https://wa.me/994503336088?text=Salam!%20Saytdan%20yazıram,%20xidmətlərinizlə%20maraqlanıram." target="_blank" class="main-phone">WhatsApp: 050 333 60 88</a>
             </div>
-        
+        </div>
 
-        <!-- НОВЫЙ БЛОК СОЦИАЛЬНЫХ СЕТЕЙ -->
         <div class="social-links">
             <a href="https://instagram.com/globalvision.az" target="_blank" class="social-btn instagram">
                 <i class="fab fa-instagram"></i>
@@ -119,7 +149,6 @@
                 <span>globalvision.az</span>
             </a>
         </div>
-    </div>
         
         <div class="footer-features">
             <div class="feat-item">
@@ -140,3 +169,26 @@
             <p>&copy; 2026 globalvision.az</p>
         </div>
     </footer>
+
+    <!-- Скрипт Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+</body>
+</html>
