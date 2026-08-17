@@ -335,3 +335,60 @@ body {
     font-size: 10px;
     color: #475569;
 }
+@media (min-width: 992px) {
+
+    .header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 30px;
+    }
+
+    /* Включаем 2 колонки на ПК */
+    .main-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 50% слева (Услуги), 50% справа (Баннер) */
+        gap: 30px;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+        align-items: start;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .services h2 {
+        text-align: left;
+    }
+
+    .promo-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .promo-slider-section {
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    .why-us, .footer {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .why-us {
+        border-radius: 16px;
+        margin-bottom: 20px;
+    }
+}
