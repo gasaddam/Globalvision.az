@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlobalVision – İT Həlləri və Təhlükəsizlik Sistemləri</title>
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="GlobalVision – Müasir təhlükəsizlik sistemləri, kamera quraşdırılması, şəbəkə həlləri və İT xidmətləri.">
+    <meta property="og:title" content="GlobalVision – İT Həlləri və Təhlükəsizlik Sistemləri">
+    <meta property="og:description" content="Müasir Təhlükəsizlik və İT İnfrastruktur Həlləri">
+    <meta property="og:type" content="website">
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.2">
 </head>
 <body>
 
-    <!-- ШАПКА (Добавлен недостающий тег header) -->
+    <!-- ШАПКА -->
     <header class="header">
         <div class="logo-text">
             <span class="gov-blue">G</span><i class="fas fa-camera gov-cam"></i><span class="gov-blue">V</span>
@@ -24,98 +30,106 @@
             <i class="fab fa-whatsapp"></i> 050 333 60 88
         </a>
     </header>
-      
-    <!-- СЛАЙДЕР С БАННЕРАМИ -->
-    <section class="promo-slider-section">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          
-          <!-- Слайд 1 (Используем надёжные заглушки) -->
-          <div class="swiper-slide">
-            <a href="https://wa.me/994503336088" target="_blank">
-              <img src="https://raw.githubusercontent.com/gasaddam/Globalvision.az/refs/heads/main/5195058988477782484.jpg?text=GlobalVision+Banner+1" alt="Акция 1">
-            </a>
-          </div>
+    
+    <!-- ГЛАВНЫЙ КОНТЕЙНЕР ДЛЯ ДЕСКТОПНОЙ СЕТКИ (2 КОЛОНКИ НА ПК) -->
+    <main class="main-wrapper">
 
-          <!-- Слайд 2 -->
-          <div class="swiper-slide">
-            <a href="https://wa.me/994503336088" target="_blank">
-              <img src="https://raw.githubusercontent.com/gasaddam/Globalvision.az/refs/heads/main/5195058988477782485.jpg?text=GlobalVision+Banner+2" alt="Акция 2">
-            </a>
-          </div>
+        <!-- ЛЕВАЯ КОЛОНКА НА ПК: УСЛУГИ -->
+        <section id="services" class="services">
+            <h2>İT HƏLLƏRİ VƏ XİDMƏTLƏRİ</h2>
+            
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-desktop"></i></div>
+                    <div class="text-box">
+                        <h3>İT XİDMƏTLƏRİ</h3>
+                        <p>Şəbəkə qurulması, sistem inteqrasiyası və texniki dəstək.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-video"></i></div>
+                    <div class="text-box">
+                        <h3>KAMERA QURAŞDIRILMASI</h3>
+                        <p>Yüksək keyfiyyətli kamera sistemlərinin quraşdırılması və konfiqurasiyası.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-wrench"></i></div>
+                    <div class="text-box">
+                        <h3>TEXNİKİ SERVİS</h3>
+                        <p>Kompüter, noutbuk, printer və digər avadanlıqların təmiri və baxımı.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-wifi"></i></div>
+                    <div class="text-box">
+                        <h3>ŞƏBƏKƏ HƏLLƏRİ</h3>
+                        <p>LAN, Wi-Fi, server və təhlükəsizlik divarlarının qurulması.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <div class="text-box">
+                        <h3>TƏHLÜKƏSİZLİK SİSTEMLƏRİ</h3>
+                        <p>Video müşahidə, girişə nəzarət və siqnalizasiya sistemləri.</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-headset"></i></div>
+                    <div class="text-box">
+                        <h3>MƏSLƏHƏT VƏ DƏSTƏK</h3>
+                        <p>Biznesiniz üçün ən uyğun texnoloji həllərlə məsləhət və daimi dəstək.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРАВАЯ КОЛОНКА НА ПК: СЛАЙДЕР И ГЛАВНЫЙ БАННЕР -->
+        <div class="promo-column">
+
+            <!-- СЛАЙДЕР С БАННЕРАМИ -->
+            <section class="promo-slider-section">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <a href="https://wa.me/994503336088" target="_blank">
+                                <img src="https://raw.githubusercontent.com/gasaddam/Globalvision.az/refs/heads/main/5195058988477782484.jpg?text=GlobalVision+Banner+1" alt="Акция 1">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://wa.me/994503336088" target="_blank">
+                                <img src="https://raw.githubusercontent.com/gasaddam/Globalvision.az/refs/heads/main/5195058988477782485.jpg?text=GlobalVision+Banner+2" alt="Акция 2">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <!-- ГЛАВНЫЙ ЭКРАН / БАННЕР -->
+            <section class="hero">
+                <div class="hero-badge">
+                    <h1>TEXNOLOGİYA İLƏ <br><span>TƏHLÜKƏSİZ</span> <br>GƏLƏCƏYƏ ADDIMLAYIN!</h1>
+                </div>
+                <div class="hero-banner">
+                    <i class="fas fa-video hero-icon"></i>
+                    <p>Müasir Təhlükəsizlik və İT İnfrastruktur Həlləri</p>
+                </div>
+            </section>
 
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
 
-    <!-- ГЛАВНЫЙ ЭКРАН -->
-    <section class="hero">
-        <div class="hero-badge">
-            <h2>TEXNOLOGİYA İLƏ <br><span>TƏHLÜKƏSİZ</span> <br>GƏLƏCƏYƏ ADDIMLAYIN!</h2>
-        </div>
-        <div class="hero-banner">
-            <i class="fas fa-video hero-icon"></i>
-            <p>Müasir Təhlükəsizlik və İT İnfrastruktur Həlləri</p>
-        </div>
-    </section>
-
-    <!-- УСЛУГИ -->
-    <section id="services" class="services">
-        <h2>İT HƏLLƏRİ VƏ XİDMƏTLƏRİ</h2>
-        
-        <div class="services-list">
-            <div class="service-item">
-                <div class="icon-box"><i class="fas fa-desktop"></i></div>
-                <div class="text-box">
-                    <h3>İT XİDMƏTLƏRİ</h3>
-                    <p>Şəbəkə qurulması, sistem inteqrasiyası və texniki dəstək.</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="icon-box"><i class="fas fa-video"></i></div>
-                <div class="text-box">
-                    <h3>KAMERA QURAŞDIRILMASI</h3>
-                    <p>Yüksək keyfiyyətli kamera sistemlərinin quraşdırılması və konfiqurasiyası.</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="icon-box"><i class="fas fa-wrench"></i></div>
-                <div class="text-box">
-                    <h3>TEXNİKİ SERVİS</h3>
-                    <p>Kompüter, noutbuk, printer və digər avadanlıqların təmiri və baxımı.</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="icon-box"><i class="fas fa-wifi"></i></div>
-                <div class="text-box">
-                    <h3>ŞƏBƏKƏ HƏLLƏRİ</h3>
-                    <p>LAN, Wi-Fi, server və təhlükəsizlik divarlarının qurulması.</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
-                <div class="text-box">
-                    <h3>TƏHLÜKƏSİZLİK SİSTEMLƏRİ</h3>
-                    <p>Video müşahidə, girişə nəzarət və siqnalizasiya sistemləri.</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="icon-box"><i class="fas fa-headset"></i></div>
-                <div class="text-box">
-                    <h3>MƏSLƏHƏT VƏ DƏSTƏK</h3>
-                    <p>Biznesiniz üçün ən uyğun texnoloji həllərlə məsləhət və daimi dəstək.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- ПОЧЕМУ МЫ -->
     <section class="why-us">
